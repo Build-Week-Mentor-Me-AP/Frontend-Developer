@@ -16,7 +16,7 @@ return (
    
 <div>
     <Form>
-        <Field type="text" name="email" placeholder="email"/>
+        <Field type="text" name="email" placeholder= "email"/>
         {touched.email && errors.email && (
         <p className = 'error'>{errors.email}</p>)}
         <Field type="text" name="password" placeholder="password"/>
