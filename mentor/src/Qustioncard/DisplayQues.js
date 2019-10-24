@@ -23,7 +23,6 @@ export default function DisplayQues (props) {
       <p>Question: {props.question}</p>
       <p>Business Type: {props.business_type}</p>
       <p>Username: {props.entrepreneur_username}</p>
-      />
       </Man>
       )
   }

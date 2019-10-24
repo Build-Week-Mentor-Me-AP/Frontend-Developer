@@ -18,10 +18,6 @@ text-align:center;
   background-color: lightsalmon;
 
 `
-const Navlinks = styled.a`
-
-text-decoration:none
-`
 
 function App() {
   return (

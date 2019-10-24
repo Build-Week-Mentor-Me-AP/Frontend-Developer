@@ -10,7 +10,7 @@ const SignInForm = ({ values, touched, errors, status, }) => {
       if (status) {
           setUser([...user, status]);
       }
-  }, [status])
+  }, [status, user])
 
 return (
    

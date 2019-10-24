@@ -5,12 +5,13 @@ import axios from "axios"
 import "../forms.css"
 
 const LoginForm = ({ values, touched, errors, status }) => {
-    const [user, setUser] = useState([]);
-    useEffect(() => {
+  const [user, setUser] = useState([]);
+
+  useEffect(() => {
       if (status) {
           setUser([...user, status]);
       }
-  }, [status])
+  }, [status, user])
 
 return (
    
