@@ -2,9 +2,9 @@ import React, {useState, useEffect} from "react";
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 import axios from "axios"
+import "../forms.css"
 
-
-const LoginForm = ({ values, touched, errors, status, }) => {
+const LoginForm = ({ values, touched, errors, status }) => {
     const [user, setUser] = useState([]);
     useEffect(() => {
       if (status) {
@@ -14,12 +14,12 @@ const LoginForm = ({ values, touched, errors, status, }) => {
 
 return (
    
-<div>
-    <Form>
-        <Field type="text" name="email" placeholder= "email"/>
+<div className= "login">
+    <Form className ="form" >
+        <Field type="text" name="email" placeholder= "Email"/>
         {touched.email && errors.email && (
         <p className = 'error'>{errors.email}</p>)}
-        <Field type="text" name="password" placeholder="password"/>
+        <Field type="text" name="password" placeholder="Password"/>
         {touched.password && errors.password && (
         <p className = 'error'>{errors.password}</p>)}
         <label className="checkbox-container"/>

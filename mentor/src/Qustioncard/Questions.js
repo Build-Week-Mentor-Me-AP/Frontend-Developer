@@ -14,8 +14,8 @@ export default function Questions() {
     axios.get("https://kefi-mentor-me.herokuapp.com/api/questions")
     .then(res => {
       
-      console.log(res.data.results);
-      setQuestion(res.data.results);
+      console.log(res);
+      setQuestion(res.data);
     }).catch(e => console.log(e));
   }, []);
 
