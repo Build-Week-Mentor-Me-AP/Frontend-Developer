@@ -4,7 +4,10 @@ import Login from "./Forms/Login"
 import SignUp from "./Forms/SignUp"
 import Questions from "./Qustioncard/Questions"
 import styled from "styled-components";
-import './App.css';
+import './forms.css';
+
+
+
 
 
 const Jumpman = styled.div `
@@ -18,17 +21,18 @@ text-align:center;
   background-color: lightsalmon;
 
 `
-
 function App() {
   return (
     <main>
       <Jumpman>
-        <Link to="/" style={{ textDecoration: 'none', color:'whitesmoke'}}  >Home</Link>
-        <Link to="/Join" style={{ textDecoration: 'none', color:'whitesmoke'}}>Join Now</Link>
-        <Link to="/Questions" style={{ textDecoration: 'none', color:'whitesmoke'}}>Ask a Question</Link>
+        <Link className= "links" to="/" style={{ textDecoration: 'none', color:'whitesmoke'}}  >Home</Link>
+        <Link className= "links"to="/Join" style={{ textDecoration: 'none', color:'whitesmoke'}}>Join Now</Link>
+        <Link className= "links"to="/Questions" style={{ textDecoration: 'none', color:'whitesmoke'}}>Ask a Question</Link>
         {/* <Link to="/Search">Search for Questions</Link> */}
       </Jumpman>
 
+
+      <h2 className="title">Mentor with Greatness</h2>
 
       <Route exact path="/" component={Login}/>
       <Route path="/Join" component={SignUp}/>
