@@ -27,7 +27,7 @@ export default function Questions() {
             id={ques.id}
             title={ques.title}
             question={ques.question}
-            bussiness_type={ques.bussiness_type}
+            business_type={ques.business_type}
             photo={ques.photo}
             entrepreneur_username={ques.entrepreneur_username}
           />   

@@ -10,11 +10,11 @@ const SignInForm = ({ values, touched, errors, status, }) => {
       if (status) {
           setUser([...user, status]);
       }
-  }, [status])
+  }, [status, user])
 
 return (
    
-<div>
+<div className = "login">
     <Form>
         <Field type="text" name="Name" placeholder="name"/>
         {touched.name && errors.name && (

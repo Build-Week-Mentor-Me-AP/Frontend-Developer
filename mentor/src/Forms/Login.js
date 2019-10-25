@@ -10,7 +10,7 @@ const LoginForm = ({ values, touched, errors, status }) => {
       if (status) {
           setUser([...user, status]);
       }
-  }, [status])
+  }, [status, user])
 
 return (
    
@@ -52,7 +52,7 @@ const FormikLoginForm = withFormik ({
       }
     },
     validationSchema: Yup.object().shape({
-        email: Yup.string().email().required("Add your username Man!!!"),
+        email: Yup.string().email().required("Add your email Man!!!"),
       password: Yup.string().min(8).max(16).matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]$").required(),
     }),
 
