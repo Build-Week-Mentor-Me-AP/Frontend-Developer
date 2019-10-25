@@ -21,11 +21,6 @@ text-align:center;
   background-color: lightsalmon;
 
 `
-<<<<<<< HEAD
-
-=======
->>>>>>> 5a0d0a061aa463c678d9e8db1c81e6d4697b1596
-
 function App() {
   return (
     <main>
