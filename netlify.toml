@@ -1,0 +1,4 @@
+[build]
+base = "mentor/"
+publish = "build/"
+command = "yarn build"

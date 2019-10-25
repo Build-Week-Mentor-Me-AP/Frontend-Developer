@@ -24,7 +24,7 @@ export default function Questions() {
      
       {question.map(ques => 
           <DisplayQues   
-            id={ques.id}
+            key={ques.id}
             title={ques.title}
             question={ques.question}
             business_type={ques.business_type}
